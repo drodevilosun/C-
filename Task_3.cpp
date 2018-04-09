@@ -1,13 +1,13 @@
 //From Tuan-san:
 /*******************************************************************************
- * Copyright(C) 2015 - 2016 Renesas Electronics Corporation.                   *
+ * Copyright(C) 2015 - 2016 FA-team.                   *
  * All Rights Reserved.                                                        *
  *                                                                             *
- * RENESAS ELECTRONICS CONFIDENTIAL AND PROPRIETARY                            *
+ * FA-team CONFIDENTIAL AND PROPRIETARY                            *
  * This program must be used solely for the purpose for which it was           *
- * furnished by Renesas Electronics Corporation. No part of this program       *
+ * furnished by FA-team Corporation. No part of this program       *
  * may be reproduced or disclosed to others, in any form, without the prior    *
- * written permission of Renesas Electronics Corporation.                      *
+ * written permission of FA-team.                      *
  *                                                                             *
  ******************************************************************************/
 
