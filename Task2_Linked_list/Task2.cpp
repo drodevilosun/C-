@@ -128,3 +128,6 @@ int main() {
 	getch();
 	return 0;
 }
+
+Revert linklist:
+Node *nodePtr, *nextNode;nodePtr = head;while (nodePtr != nullptr){nextNode = nodePtr->next;nodePtr->next = nullptr;nodePtr = nextNode;}
