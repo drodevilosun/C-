@@ -1,12 +1,14 @@
 #pragma once
-#include <iostream>
-#include <string>
 #include "Product.h"
+#include "Customer.h"
 using namespace std;
 class Sell {
-private:
-	string name_product;
-	string 
-	int price;
 
+public:
+	Sell();
+	void print_product(Product p);
+	void intro();
+	int sell_compare(Product p, Customer c);
+	void ship(Customer c);
+	void Total_bill(Customer c);
 };

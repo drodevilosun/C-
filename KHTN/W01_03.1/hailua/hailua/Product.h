@@ -16,7 +16,10 @@ public:
 	//Product(string n);
 	//Product(string n, int p);
 	//Product(string n, int p, int q);
-	Product(string n, int p, int q, string MFG_tmp, string EXP_tmp);
+	Product(string n, int p, int q, string origin_tmp, string MFG_tmp, string EXP_tmp);
 	void Print_all_product();
-	void Total_bill();
+	string get_name_product();
+	int get_price();
+	int get_quantity();
+	
 };
