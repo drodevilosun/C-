@@ -24,11 +24,11 @@ int main()
 	Customer cus1("01 West Washington", customer_product, customer_quantity);
 	Customer cus2("127 West New York", "Banana", 10);
 
-	for (int i = 0; i < cus_count; i++) {
+	/*for (int i = 0; i < cus_count; i++) {
 		for (int j = 0; j < pro_count; j++) {
 			S.sell_compare(p_coconut, );
 		}
-	}
+	}*/
 
 	_getch();
 	return 0;

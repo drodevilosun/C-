@@ -1,4 +1,5 @@
 #include "Seller.h"
+#include "Customer.h"
 
 Sell::Sell() {
 	cout << "Wellcome to hailua.com.vn" << endl;
@@ -34,7 +35,7 @@ int Sell::sell_compare(Product p, Customer c) {
 void Sell::ship(Customer c) {
 	string c_product = c.get_customer_product();
 	int c_quantity = c.get_p_quantity();
-	cout << "Shipping product " << c_quantity << " " << c_product << "to address: " << c.get_customer_address << endl;
+	cout << "Shipping product " << c_quantity << " " << c_product << "to address: " << c.get_customer_address() << endl;
 }
 
 void Sell::Total_bill(Customer c) {
