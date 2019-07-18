@@ -1,4 +1,20 @@
 #include "Seller.h"
+#include <iostream>
+#include <cctype>
+
+
+bool compareChar(char & c1, char & c2) {
+	using namespace std;
+	if (c1 == c2)
+		return true;
+	else if (toupper(c1) == toupper(c2))
+		return true;
+	return false;
+}
+bool caseInSensStringCompare(string & s1, string & s2) {
+	using namespace std;
+	return ((s1.size() == s2.size()) && equal(s1.begin(), s1.end(), s2.begin(), &compareChar));
+}
 
 Sell::Sell() {
 	cout << "Wellcome to hailua.com.vn" << endl;
@@ -21,20 +37,22 @@ int Sell::sell_compare(Product p, Customer c) {
 	c_product = c.get_customer_product();
 	p_quantity = p.get_quantity();
 	c_quantity = c.get_p_quantity();
-	if (p_product != c_product)
-		//cout << "We don't have this product!" << endl;
+	if (!caseInSensStringCompare(p_product, c_product)) {
+		cout << "We don't have this product!" << endl;
 		return 0;
-	else if (c_quantity > p_quantity)
-		//cout << "We only have " << p_quantity << " " << "for this " << p_product << endl;
+	}
+	//cout << c_quantity << " " << p_quantity << endl;
+	if (c_quantity > p_quantity) {
+		cout << "We only have " << p_quantity << " " << "for this " << p_product << endl;
 		return 0;
-	else
-		return 1;
+	}
+	return 1;
 }
 
 void Sell::ship(Customer c) {
 	string c_product = c.get_customer_product();
 	int c_quantity = c.get_p_quantity();
-	cout << "Shipping product " << c_quantity << " " << c_product << "to address: " << c.get_customer_address << endl;
+	cout << "Shipping product " << c_quantity << " " << c_product << " to address: " << c.get_customer_address() << endl;
 }
 
 void Sell::Total_bill(Customer c) {
