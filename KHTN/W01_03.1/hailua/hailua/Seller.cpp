@@ -1,4 +1,5 @@
 #include "Seller.h"
+<<<<<<< HEAD
 #include <iostream>
 #include <cctype>
 
@@ -15,6 +16,9 @@ bool caseInSensStringCompare(string & s1, string & s2) {
 	using namespace std;
 	return ((s1.size() == s2.size()) && equal(s1.begin(), s1.end(), s2.begin(), &compareChar));
 }
+=======
+#include "Customer.h"
+>>>>>>> f3727100214000dd0dcce667022d3333a62cd893
 
 Sell::Sell() {
 	cout << "Wellcome to hailua.com.vn" << endl;
@@ -52,7 +56,11 @@ int Sell::sell_compare(Product p, Customer c) {
 void Sell::ship(Customer c) {
 	string c_product = c.get_customer_product();
 	int c_quantity = c.get_p_quantity();
+<<<<<<< HEAD
 	cout << "Shipping product " << c_quantity << " " << c_product << " to address: " << c.get_customer_address() << endl;
+=======
+	cout << "Shipping product " << c_quantity << " " << c_product << "to address: " << c.get_customer_address() << endl;
+>>>>>>> f3727100214000dd0dcce667022d3333a62cd893
 }
 
 void Sell::Total_bill(Customer c) {

@@ -27,6 +27,7 @@ int main()
 	cus1.Customer_info();
 	cus2.Customer_info();
 
+<<<<<<< HEAD
 	re = S.sell_compare(p_coconut, cus1);
 	if (re == 1){
 		cout << "OK we will ship to your address" << endl;
@@ -39,6 +40,14 @@ int main()
 		S.ship(cus2);
 	}
 	
+=======
+	/*for (int i = 0; i < cus_count; i++) {
+		for (int j = 0; j < pro_count; j++) {
+			S.sell_compare(p_coconut, );
+		}
+	}*/
+
+>>>>>>> f3727100214000dd0dcce667022d3333a62cd893
 	_getch();
 	return 0;
 }
