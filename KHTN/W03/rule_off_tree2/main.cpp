@@ -21,14 +21,14 @@ public:
 };
 class Teo :public Animal {
 public:
-	Teo(int tmp2):Animal(tmp2){
+	Teo(int tmp2) :Animal(tmp2) {
 		Animal::func_f();
 		cout << "Derive class is called with value:" << tmp2 << endl;
 	}
 	Teo() :Animal() {
 		cout << "hehe" << endl;
 	}
-	void func_f(){
+	void func_f() {
 		cout << "Derive class call function f" << endl;
 	}
 };
@@ -43,17 +43,23 @@ int main() {
 
 
 	/* Test pointer */
-	char a[10] = {0 , 1, 2 ,3, 4, 5, 6, 7, 8 , 9};\
+	//int a[10] = { 0 , 1, 2 ,3, 4, 5, 6, 7, 8 , 9 };
+	char a[10] = { '0' , '1', '2' ,'3', '4', '5', '6', '7', '8' , '9' };
 	int i;
 	for (i = 0; i < 10; i++) {
 		cout << a[i] << endl;
 	}
-	
-	int *s;
 
-	
+	/*int *s;
+	s = (int *)a;*/
+	short *s;
+	s = (short *)a;
+
+
 	//s = (int*) (a + 2);
-	//cout << *s << endl;
+	cout << int(a[1]) << endl;
+	cout << sizeof(s) << endl;
+	cout << *s << endl;
 
 	_getch();
 	return 0;
