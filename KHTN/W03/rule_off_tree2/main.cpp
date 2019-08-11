@@ -44,7 +44,7 @@ int main() {
 
 	/* Test pointer */
 	//int a[10] = { 0 , 1, 2 ,3, 4, 5, 6, 7, 8 , 9 };
-	char a[10] = { '0' , '1', '2' ,'3', '4', '5', '6', '7', '8' , '9' };
+	char a[10] = { 200 , 1000, '0' ,'0', '4', '5', '6', '7', '8' , '9' };
 	int i;
 	for (i = 0; i < 10; i++) {
 		cout << a[i] << endl;
@@ -57,7 +57,7 @@ int main() {
 
 
 	//s = (int*) (a + 2);
-	cout << int(a[1]) << endl;
+	cout << a[1] << endl;
 	cout << sizeof(s) << endl;
 	cout << *s << endl;
 
